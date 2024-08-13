@@ -1,0 +1,5 @@
+[28-May-2024 07:12:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/hemppmft/test.tractionshastra.com/Kurkut/handleOrder.php:7
+Stack trace:
+#0 /home3/hemppmft/test.tractionshastra.com/Kurkut/handleOrder.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'hemppmft_kurkut')
+#1 {main}
+  thrown in /home3/hemppmft/test.tractionshastra.com/Kurkut/handleOrder.php on line 7

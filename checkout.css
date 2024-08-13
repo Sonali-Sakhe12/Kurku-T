@@ -1,0 +1,209 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --title-font:"Lora", serif;
+  --body-font: "Ubuntu", sans-serif;
+  --desc-font:"Montserrat", sans-serif;
+}
+
+
+/* Basic styling for the logo */
+.logo {
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    font-family: var(--title-font);
+    font-style: italic;
+}
+
+/* Container styling */
+.container {
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group > div {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+a.return-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+a.return-link:hover {
+    text-decoration: underline;
+}
+
+/* Bill section styling */
+.bill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-weight: bold;
+}
+
+.item-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.discount {
+    margin-top: 20px;
+}
+
+.discount input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.discount button {
+    background-color: rgb(153, 43, 18);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.discount button:hover{
+    background-color: rgb(180, 53, 24);
+}
+
+.summary {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.summary .item {
+    justify-content: space-between;
+}
+
+.summary .total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Responsive design */
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bill {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Side by side layout for larger screens */
+@media screen and (min-width: 801px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    form {
+        width: 45%;
+        margin-right: 20px;
+    }
+
+    .bill {
+        width: 45%;
+        margin-left: 20px;
+    }
+}
